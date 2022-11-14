@@ -6,13 +6,13 @@ public class RubyController : MonoBehaviour
 {
     public float speed = 12.0f;
     public int maxHealth = 5;
+    public float timeInvincible = 2.0f;
 
     public int health { get { return currentHealth; }}
     int currentHealth;
 
-    public float timeInvincible;
     bool isInvincible;
-    public float invincibleTimer;
+    float invincibleTimer;
     
     Rigidbody2D rigidbody2d;
 
