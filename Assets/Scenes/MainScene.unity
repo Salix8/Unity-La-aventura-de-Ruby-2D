@@ -5845,6 +5845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CogBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 5661611912535229842, guid: 81a0d3a852cfbc1419bd651c80201b54, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81a0d3a852cfbc1419bd651c80201b54, type: 3}
 --- !u!1001 &6135949208061650610

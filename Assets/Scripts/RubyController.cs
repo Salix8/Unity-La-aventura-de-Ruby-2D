@@ -63,6 +63,11 @@ public class RubyController : MonoBehaviour
         {
             Launch();
         }
+        //  Puedes mantener el boton de disparar
+        // if(Input.GetKey(KeyCode.C))
+        // {
+        //     Launch();
+        // }
     }
 
     public void ChangeHealth(int amount)
