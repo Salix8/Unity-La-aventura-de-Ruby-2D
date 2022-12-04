@@ -7,8 +7,6 @@ public class EnemyController : MonoBehaviour {
     public bool vertical;
     public float changeTime = 3.0f;
 
-    public ParticleSystem smokeEffect;
-
     Rigidbody2D rigidbody2D;
     float timer;
     int direction = 1;
@@ -16,12 +14,18 @@ public class EnemyController : MonoBehaviour {
 
     Animator animator;
 
+    public ParticleSystem smokeEffect;
+
+    AudioSource enemyAudio;
+    public AudioClip fixAudioClip;
+
     
     // Start is called before the first frame update
     void Start() {
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        enemyAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -75,9 +79,9 @@ public class EnemyController : MonoBehaviour {
 
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
-        
         smokeEffect.Stop();
+        enemyAudio.Stop();
+        enemyAudio.PlayOneShot(fixAudioClip);
     }
-
 
 }
