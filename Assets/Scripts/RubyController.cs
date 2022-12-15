@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
+    // public GameObject dialogue;
     public float speed = 3.0f;
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
